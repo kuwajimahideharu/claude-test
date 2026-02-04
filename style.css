@@ -3,6 +3,25 @@
    Modern Lifestyle Website
    ============================================ */
 
+/* ---------- Skip Link ---------- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  background: var(--gradient-1);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 400;
+  z-index: 10000;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after {
   margin: 0;
@@ -679,13 +698,15 @@ img {
   min-height: 200px;
 }
 
-.lifestyle-card-emoji {
-  font-size: 4rem;
-  transition: var(--transition);
+.lifestyle-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.lifestyle-card:hover .lifestyle-card-emoji {
-  transform: scale(1.2) rotate(5deg);
+.lifestyle-card:hover .lifestyle-card-img {
+  transform: scale(1.08);
 }
 
 .lifestyle-card-content {
@@ -746,14 +767,17 @@ img {
   justify-content: center;
 }
 
-.gallery-emoji {
-  font-size: 4rem;
-  transition: var(--transition);
-  z-index: 1;
+.gallery-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.gallery-item:hover .gallery-emoji {
-  transform: scale(1.3) rotate(10deg);
+.gallery-item:hover .gallery-img {
+  transform: scale(1.1);
 }
 
 .gallery-overlay {
@@ -806,6 +830,14 @@ img {
   font-size: 1rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
+}
+
+.star-half {
+  display: inline-block;
+  overflow: hidden;
+  width: 0.55em;
+  line-height: 1;
+  vertical-align: baseline;
 }
 
 .testimonial-text {
@@ -929,7 +961,7 @@ img {
 
 /* ---------- Footer ---------- */
 .footer {
-  background: #6b6b7e;
+  background: #6e6583;
   color: rgba(255, 255, 255, 0.75);
   padding: 80px 0 40px;
 }
@@ -1006,6 +1038,12 @@ img {
   padding-top: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.8rem;
+}
+
+/* ---------- Section CTA ---------- */
+.section-cta {
+  text-align: center;
+  margin-top: 56px;
 }
 
 /* ---------- Reveal Animation ---------- */
@@ -1172,6 +1210,81 @@ img {
 ::selection {
   background: rgba(247, 168, 184, 0.25);
   color: var(--dark);
+}
+
+/* ---------- Focus Visible ---------- */
+:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Active Nav Link ---------- */
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--pink);
+}
+
+/* ---------- Back to Top Button ---------- */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-1);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.15s !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .particle,
+  .logo-icon,
+  .scroll-dot,
+  .shape,
+  .about-icon {
+    animation: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* ---------- Smooth scroll offset for fixed nav ---------- */

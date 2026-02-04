@@ -6,10 +6,35 @@
   <title>Bloom - あなたらしく咲く毎日を</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Bloom（ブルーム）は、あなたらしく咲く毎日を応援するライフスタイルメディアです。美容・ウェルネス・ファッション・マインドフルネスなど、自分を愛するためのヒントをお届けします。">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bloom - あなたらしく咲く毎日を">
+  <meta property="og:description" content="自分を愛し、日々の小さな幸せを大切にする。Bloomはあなたの「好き」を見つけるライフスタイルメディアです。">
+  <meta property="og:image" content="https://example.com/bloom-og.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bloom - あなたらしく咲く毎日を">
+  <meta name="twitter:description" content="自分を愛し、日々の小さな幸せを大切にする。Bloomはあなたの「好き」を見つけるライフスタイルメディアです。">
+  <meta name="twitter:image" content="https://example.com/bloom-og.jpg">
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bloom",
+    "url": "https://example.com/",
+    "description": "あなたらしく咲く毎日を応援するライフスタイルメディア",
+    "inLanguage": "ja"
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">メインコンテンツへ</a>
+
   <!-- Floating Particles -->
   <div class="particles" id="particles"></div>
 
@@ -21,14 +46,14 @@
         <span class="logo-text">Bloom</span>
       </a>
       <div class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#lifestyle" class="nav-link">Lifestyle</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#testimonials" class="nav-link">Voice</a>
-        <a href="#newsletter" class="nav-link nav-link-cta">Join Us</a>
+        <a href="#about" class="nav-link" lang="en">About</a>
+        <a href="#features" class="nav-link" lang="en">Features</a>
+        <a href="#lifestyle" class="nav-link" lang="en">Lifestyle</a>
+        <a href="#gallery" class="nav-link" lang="en">Gallery</a>
+        <a href="#testimonials" class="nav-link" lang="en">Voice</a>
+        <a href="#newsletter" class="nav-link nav-link-cta" lang="en">Join Us</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -37,10 +62,10 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="hero">
+  <section class="hero" id="main-content">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <p class="hero-subtitle reveal">— Your Authentic Life —</p>
+      <p class="hero-subtitle reveal" lang="en">— Your Authentic Life —</p>
       <h1 class="hero-title reveal">
         <span class="hero-line">あなたらしく</span>
         <span class="hero-line accent">咲く毎日を。</span>
@@ -72,26 +97,29 @@
   <section class="about section" id="about">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">About</span>
+        <span class="section-tag" lang="en">About</span>
         <h2 class="section-title">美しさは、<br>自分を知ることから。</h2>
         <div class="section-line"></div>
       </div>
       <div class="about-grid">
         <div class="about-card glass reveal" data-delay="0">
           <div class="about-icon">🌸</div>
-          <h3>Inner Beauty</h3>
-          <p>内側から輝く美しさを追求。マインドフルネスやセルフケアの習慣で、心を整えましょう。</p>
+          <h3 lang="en">Inner Beauty</h3>
+          <p>毎朝3分の呼吸法や週1のセルフケアルーティンで心を整える。利用者の87%が「気持ちに余裕が生まれた」と実感しています。</p>
         </div>
         <div class="about-card glass reveal" data-delay="1">
           <div class="about-icon">✨</div>
-          <h3>Self Discovery</h3>
-          <p>本当の自分に出会う旅。あなただけのスタイルや価値観を見つけるお手伝いをします。</p>
+          <h3 lang="en">Self Discovery</h3>
+          <p>100種類以上のパーソナル診断とあなた専用のスタイルマップで「本当に好きなもの」を可視化。新しい自分に出会えます。</p>
         </div>
         <div class="about-card glass reveal" data-delay="2">
           <div class="about-icon">🦋</div>
-          <h3>Growth</h3>
-          <p>毎日少しずつ成長する喜び。新しいチャレンジを楽しみながら、理想の自分に近づこう。</p>
+          <h3 lang="en">Growth</h3>
+          <p>30日チャレンジプログラムや目標設定ワークシートで毎日の小さな成長を記録。仲間と一緒だから続けられます。</p>
         </div>
+      </div>
+      <div class="section-cta reveal">
+        <a href="#features" class="btn btn-outline">機能をもっと見る</a>
       </div>
     </div>
   </section>
@@ -100,7 +128,7 @@
   <section class="features section" id="features">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Features</span>
+        <span class="section-tag" lang="en">Features</span>
         <h2 class="section-title">毎日をもっと<br>特別にする機能</h2>
         <div class="section-line"></div>
       </div>
@@ -111,9 +139,9 @@
             <h3>パーソナルスタイリング</h3>
             <p>AIがあなたの好みを学習し、毎日のコーディネートを提案。気分やシーンに合わせた最適なスタイルが見つかります。</p>
             <div class="feature-tags">
-              <span class="tag">AI</span>
-              <span class="tag">Fashion</span>
-              <span class="tag">Daily</span>
+              <span class="tag" lang="en">AI</span>
+              <span class="tag" lang="en">Fashion</span>
+              <span class="tag" lang="en">Daily</span>
             </div>
           </div>
           <div class="feature-visual">
@@ -126,9 +154,9 @@
             <h3>ウェルネストラッカー</h3>
             <p>睡眠・食事・運動・メンタルを総合的に記録。あなたの健康を可視化し、より良い習慣づくりをサポートします。</p>
             <div class="feature-tags">
-              <span class="tag">Health</span>
-              <span class="tag">Wellness</span>
-              <span class="tag">Tracking</span>
+              <span class="tag" lang="en">Health</span>
+              <span class="tag" lang="en">Wellness</span>
+              <span class="tag" lang="en">Tracking</span>
             </div>
           </div>
           <div class="feature-visual">
@@ -141,15 +169,18 @@
             <h3>コミュニティ</h3>
             <p>同じ価値観を持つ仲間とつながる。趣味や目標を共有し、お互いを高め合えるコミュニティです。</p>
             <div class="feature-tags">
-              <span class="tag">Community</span>
-              <span class="tag">Connect</span>
-              <span class="tag">Share</span>
+              <span class="tag" lang="en">Community</span>
+              <span class="tag" lang="en">Connect</span>
+              <span class="tag" lang="en">Share</span>
             </div>
           </div>
           <div class="feature-visual">
             <div class="feature-circle"></div>
           </div>
         </div>
+      </div>
+      <div class="section-cta reveal">
+        <a href="#newsletter" class="btn btn-primary">無料ではじめる</a>
       </div>
     </div>
   </section>
@@ -158,56 +189,59 @@
   <section class="lifestyle section" id="lifestyle">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Lifestyle</span>
+        <span class="section-tag" lang="en">Lifestyle</span>
         <h2 class="section-title">今日の<br>おすすめ</h2>
         <div class="section-line"></div>
       </div>
       <div class="lifestyle-grid">
         <article class="lifestyle-card large reveal" data-delay="0">
-          <div class="lifestyle-card-bg" style="background: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);">
-            <div class="lifestyle-card-emoji">🧘‍♀️</div>
+          <div class="lifestyle-card-bg">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=800&fit=crop&q=80" alt="ヨガをする女性" class="lifestyle-card-img" loading="lazy">
           </div>
           <div class="lifestyle-card-content">
-            <span class="lifestyle-category">Wellness</span>
+            <span class="lifestyle-category" lang="en">Wellness</span>
             <h3>朝のやさしいヨガで<br>心と体を目覚めさせよう</h3>
             <p>毎朝たった15分のヨガ習慣が、あなたの1日を大きく変えてくれます。深い呼吸とともにゆっくりと体を伸ばすことで、血流が促進され、頭がすっきりクリアに。肩こりや腰痛の改善にも効果的です。</p>
             <p>初心者にもおすすめのポーズは「キャット＆カウ」「ダウンドッグ」「チャイルドポーズ」の3つ。無理なく自分のペースで、今日から始めてみませんか？</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more" lang="en">Read More →</a>
           </div>
         </article>
         <article class="lifestyle-card reveal" data-delay="1">
-          <div class="lifestyle-card-bg" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
-            <div class="lifestyle-card-emoji">🥗</div>
+          <div class="lifestyle-card-bg">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop&q=80" alt="ヘルシーフード" class="lifestyle-card-img" loading="lazy">
           </div>
           <div class="lifestyle-card-content">
-            <span class="lifestyle-category">Food</span>
+            <span class="lifestyle-category" lang="en">Food</span>
             <h3>グルテンフリーの<br>美味しいレシピ</h3>
             <p>体に優しくて美味しい、簡単レシピ集。</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more" lang="en">Read More →</a>
           </div>
         </article>
         <article class="lifestyle-card reveal" data-delay="2">
-          <div class="lifestyle-card-bg" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
-            <div class="lifestyle-card-emoji">📖</div>
+          <div class="lifestyle-card-bg">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop&q=80" alt="本が並ぶ図書館" class="lifestyle-card-img" loading="lazy">
           </div>
           <div class="lifestyle-card-content">
-            <span class="lifestyle-category">Books</span>
+            <span class="lifestyle-category" lang="en">Books</span>
             <h3>心が整う<br>5冊の本</h3>
             <p>読むだけで心が軽くなる、おすすめ本。</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more" lang="en">Read More →</a>
           </div>
         </article>
         <article class="lifestyle-card reveal" data-delay="3">
-          <div class="lifestyle-card-bg" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);">
-            <div class="lifestyle-card-emoji">✈️</div>
+          <div class="lifestyle-card-bg">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop&q=80" alt="自然の美しい風景" class="lifestyle-card-img" loading="lazy">
           </div>
           <div class="lifestyle-card-content">
-            <span class="lifestyle-category">Travel</span>
+            <span class="lifestyle-category" lang="en">Travel</span>
             <h3>週末リトリート<br>おすすめスポット</h3>
             <p>日常を離れてリフレッシュできる場所。</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more" lang="en">Read More →</a>
           </div>
         </article>
+      </div>
+      <div class="section-cta reveal">
+        <a href="#" class="btn btn-outline">すべての記事を見る</a>
       </div>
     </div>
   </section>
@@ -216,45 +250,45 @@
   <section class="gallery section" id="gallery">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Gallery</span>
+        <span class="section-tag" lang="en">Gallery</span>
         <h2 class="section-title">あなたの毎日に<br>彩りを</h2>
         <div class="section-line"></div>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item reveal" data-delay="0" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-          <div class="gallery-emoji">💐</div>
+        <div class="gallery-item reveal" data-delay="0" role="img" aria-label="Flowers - 花束のイメージ">
+          <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600&h=600&fit=crop&q=80" alt="" class="gallery-img" loading="lazy">
           <div class="gallery-overlay">
-            <span>Flowers</span>
+            <span lang="en">Flowers</span>
           </div>
         </div>
-        <div class="gallery-item reveal" data-delay="1" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-          <div class="gallery-emoji">🌊</div>
+        <div class="gallery-item reveal" data-delay="1" role="img" aria-label="Ocean - 海のイメージ">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=600&fit=crop&q=80" alt="" class="gallery-img" loading="lazy">
           <div class="gallery-overlay">
-            <span>Ocean</span>
+            <span lang="en">Ocean</span>
           </div>
         </div>
-        <div class="gallery-item reveal" data-delay="2" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-          <div class="gallery-emoji">🌿</div>
+        <div class="gallery-item reveal" data-delay="2" role="img" aria-label="Nature - 自然のイメージ">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=600&fit=crop&q=80" alt="" class="gallery-img" loading="lazy">
           <div class="gallery-overlay">
-            <span>Nature</span>
+            <span lang="en">Nature</span>
           </div>
         </div>
-        <div class="gallery-item reveal" data-delay="3" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-          <div class="gallery-emoji">🌅</div>
+        <div class="gallery-item reveal" data-delay="3" role="img" aria-label="Sunset - 夕焼けのイメージ">
+          <img src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=600&h=600&fit=crop&q=80" alt="" class="gallery-img" loading="lazy">
           <div class="gallery-overlay">
-            <span>Sunset</span>
+            <span lang="en">Sunset</span>
           </div>
         </div>
-        <div class="gallery-item reveal" data-delay="4" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
-          <div class="gallery-emoji">🎨</div>
+        <div class="gallery-item reveal" data-delay="4" role="img" aria-label="Art - アートのイメージ">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=600&fit=crop&q=80" alt="" class="gallery-img" loading="lazy">
           <div class="gallery-overlay">
-            <span>Art</span>
+            <span lang="en">Art</span>
           </div>
         </div>
-        <div class="gallery-item reveal" data-delay="5" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
-          <div class="gallery-emoji">☕</div>
+        <div class="gallery-item reveal" data-delay="5" role="img" aria-label="Cafe - カフェのイメージ">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop&q=80" alt="" class="gallery-img" loading="lazy">
           <div class="gallery-overlay">
-            <span>Cafe</span>
+            <span lang="en">Cafe</span>
           </div>
         </div>
       </div>
@@ -265,7 +299,7 @@
   <section class="testimonials section" id="testimonials">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Voice</span>
+        <span class="section-tag" lang="en">Voice</span>
         <h2 class="section-title">みんなの声</h2>
         <div class="section-line"></div>
       </div>
@@ -282,7 +316,7 @@
           </div>
         </div>
         <div class="testimonial-card glass reveal" data-delay="1">
-          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-stars" aria-label="5つ星中4.5">★★★★<span class="star-half">★</span></div>
           <p class="testimonial-text">「瞑想の記事をきっかけに、毎日のルーティンが変わりました。心に余裕が生まれた気がします。」</p>
           <div class="testimonial-author">
             <div class="testimonial-avatar" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">Y</div>
@@ -293,7 +327,7 @@
           </div>
         </div>
         <div class="testimonial-card glass reveal" data-delay="2">
-          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-stars" aria-label="5つ星中4">★★★★☆</div>
           <p class="testimonial-text">「コミュニティで素敵な仲間に出会えました。同じ目標を持つ人と繋がれるのが嬉しい！」</p>
           <div class="testimonial-author">
             <div class="testimonial-avatar" style="background: linear-gradient(135deg, #89f7fe, #66a6ff);">A</div>
@@ -304,6 +338,9 @@
           </div>
         </div>
       </div>
+      <div class="section-cta reveal">
+        <a href="#newsletter" class="btn btn-primary">コミュニティに参加する</a>
+      </div>
     </div>
   </section>
 
@@ -312,19 +349,19 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item reveal" data-delay="0">
-          <div class="stat-number" data-target="50000">0</div>
+          <div class="stat-number" data-target="50000" data-suffix="+">0</div>
           <div class="stat-label">ユーザー</div>
         </div>
         <div class="stat-item reveal" data-delay="1">
-          <div class="stat-number" data-target="1200">0</div>
+          <div class="stat-number" data-target="1200" data-suffix="+">0</div>
           <div class="stat-label">記事数</div>
         </div>
         <div class="stat-item reveal" data-delay="2">
-          <div class="stat-number" data-target="98">0</div>
-          <div class="stat-label">満足度 %</div>
+          <div class="stat-number" data-target="98" data-suffix="%">0</div>
+          <div class="stat-label">満足度</div>
         </div>
         <div class="stat-item reveal" data-delay="3">
-          <div class="stat-number" data-target="365">0</div>
+          <div class="stat-number" data-target="365" data-suffix="">0</div>
           <div class="stat-label">毎日更新</div>
         </div>
       </div>
@@ -338,7 +375,7 @@
         <h2>あなたらしい毎日を<br>はじめよう</h2>
         <p>最新のライフスタイル情報やお得な情報をお届けします。</p>
         <form class="newsletter-form" id="newsletterForm">
-          <input type="email" placeholder="メールアドレスを入力" required>
+          <input type="email" name="email" placeholder="メールアドレスを入力" required>
           <button type="submit" class="btn btn-primary">登録する</button>
         </form>
         <p class="newsletter-note">※ いつでも配信停止できます</p>
@@ -395,6 +432,8 @@
       </div>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">↑</button>
 
   <script src="script.js"></script>
 </body>
