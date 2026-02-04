@@ -11,26 +11,26 @@
 }
 
 :root {
-  --pink: #f5576c;
-  --lavender: #a18cd1;
-  --peach: #fbc2eb;
-  --coral: #ff9a9e;
-  --mint: #89f7fe;
-  --gold: #ffecd2;
+  --pink: #f7a8b8;
+  --lavender: #c4b1e0;
+  --peach: #fdd6ef;
+  --coral: #ffb7ba;
+  --mint: #b4f0f7;
+  --gold: #fff3e0;
   --white: #ffffff;
-  --dark: #1a1a2e;
-  --gray: #6b7280;
-  --light-gray: #f9fafb;
-  --gradient-1: linear-gradient(135deg, #f5576c 0%, #ff9a9e 100%);
-  --gradient-2: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
-  --gradient-3: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);
-  --gradient-hero: linear-gradient(135deg, #fad0c4 0%, #fbc2eb 50%, #a18cd1 100%);
-  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.1);
-  --radius: 20px;
-  --radius-sm: 12px;
-  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --dark: #5c5c6e;
+  --gray: #9b9faa;
+  --light-gray: #faf8fc;
+  --gradient-1: linear-gradient(135deg, #f7a8b8 0%, #ffcfd5 100%);
+  --gradient-2: linear-gradient(135deg, #c4b1e0 0%, #fdd6ef 100%);
+  --gradient-3: linear-gradient(135deg, #fde4d8 0%, #ffd9f5 100%);
+  --gradient-hero: linear-gradient(135deg, #fde4d8 0%, #fdd6ef 50%, #c4b1e0 100%);
+  --shadow-sm: 0 2px 12px rgba(200, 180, 220, 0.12);
+  --shadow-md: 0 8px 32px rgba(200, 180, 220, 0.15);
+  --shadow-lg: 0 20px 60px rgba(200, 180, 220, 0.18);
+  --radius: 24px;
+  --radius-sm: 16px;
+  --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 html {
@@ -40,10 +40,12 @@ html {
 
 body {
   font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+  font-weight: 300;
   color: var(--dark);
   background: var(--white);
   overflow-x: hidden;
-  line-height: 1.8;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -71,10 +73,10 @@ img {
 
 /* ---------- Glass Effect ---------- */
 .glass {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* ---------- Particles ---------- */
@@ -92,7 +94,7 @@ img {
 .particle {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.15;
+  opacity: 0.1;
   animation: floatParticle linear infinite;
 }
 
@@ -176,7 +178,7 @@ img {
 
 .nav-link {
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.05em;
   position: relative;
   color: var(--dark);
@@ -202,7 +204,7 @@ img {
   color: white !important;
   padding: 10px 24px;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-link-cta::after {
@@ -211,7 +213,7 @@ img {
 
 .nav-link-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(245, 87, 108, 0.3);
+  box-shadow: 0 8px 25px rgba(247, 168, 184, 0.3);
 }
 
 .hamburger {
@@ -259,7 +261,7 @@ img {
   position: absolute;
   inset: 0;
   background: var(--gradient-hero);
-  opacity: 0.4;
+  opacity: 0.35;
 }
 
 .hero-content {
@@ -281,7 +283,7 @@ img {
 .hero-title {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(2.5rem, 7vw, 5rem);
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.3;
   margin-bottom: 24px;
 }
@@ -322,8 +324,8 @@ img {
   padding: 14px 36px;
   border-radius: 50px;
   font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   transition: var(--transition);
   cursor: pointer;
   border: none;
@@ -332,12 +334,12 @@ img {
 .btn-primary {
   background: var(--gradient-1);
   color: white;
-  box-shadow: 0 8px 30px rgba(245, 87, 108, 0.25);
+  box-shadow: 0 8px 30px rgba(247, 168, 184, 0.25);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(245, 87, 108, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(247, 168, 184, 0.3);
 }
 
 .btn-outline {
@@ -349,7 +351,7 @@ img {
 .btn-outline:hover {
   border-color: var(--pink);
   color: var(--pink);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 /* Scroll Indicator */
@@ -398,7 +400,7 @@ img {
 .shape {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.15;
+  opacity: 0.12;
 }
 
 .shape-1 {
@@ -466,7 +468,7 @@ img {
   font-size: 1.1rem;
   letter-spacing: 0.05em;
   color: var(--pink);
-  font-weight: 500;
+  font-weight: 400;
   display: block;
   margin-bottom: 16px;
 }
@@ -474,17 +476,17 @@ img {
 .section-title {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 20px;
 }
 
 .section-line {
-  width: 60px;
-  height: 3px;
+  width: 50px;
+  height: 2px;
   background: var(--gradient-1);
   margin: 0 auto;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 /* ---------- About Section ---------- */
@@ -506,7 +508,7 @@ img {
 }
 
 .about-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -525,7 +527,7 @@ img {
 .about-card h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 16px;
 }
 
@@ -549,7 +551,7 @@ img {
   padding: 48px;
   border-radius: var(--radius);
   background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(200, 180, 220, 0.12);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -583,7 +585,7 @@ img {
 .feature-content h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 12px;
 }
 
@@ -604,9 +606,9 @@ img {
   font-size: 0.75rem;
   padding: 4px 14px;
   border-radius: 50px;
-  background: linear-gradient(135deg, rgba(245, 87, 108, 0.08), rgba(161, 140, 209, 0.08));
+  background: linear-gradient(135deg, rgba(247, 168, 184, 0.12), rgba(196, 177, 224, 0.12));
   color: var(--pink);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.05em;
 }
 
@@ -652,7 +654,7 @@ img {
 }
 
 .lifestyle-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -690,7 +692,7 @@ img {
 
 .lifestyle-category {
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--pink);
@@ -701,7 +703,7 @@ img {
 .lifestyle-card-content h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.5;
   margin-bottom: 12px;
 }
@@ -715,7 +717,7 @@ img {
 
 .read-more {
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--pink);
   transition: var(--transition);
 }
@@ -755,7 +757,7 @@ img {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -793,7 +795,7 @@ img {
 }
 
 .testimonial-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -833,7 +835,7 @@ img {
 .testimonial-author strong {
   display: block;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .testimonial-author span {
@@ -876,13 +878,13 @@ img {
   padding: 64px 48px;
   border-radius: var(--radius);
   text-align: center;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .newsletter-inner h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 16px;
   line-height: 1.5;
 }
@@ -903,7 +905,7 @@ img {
 .newsletter-form input {
   flex: 1;
   padding: 14px 20px;
-  border: 2px solid rgba(0, 0, 0, 0.06);
+  border: 2px solid rgba(200, 180, 220, 0.15);
   border-radius: 50px;
   font-size: 0.9rem;
   font-family: inherit;
@@ -914,7 +916,7 @@ img {
 
 .newsletter-form input:focus {
   border-color: var(--pink);
-  box-shadow: 0 0 0 4px rgba(245, 87, 108, 0.1);
+  box-shadow: 0 0 0 4px rgba(247, 168, 184, 0.12);
 }
 
 .newsletter-note {
@@ -925,8 +927,8 @@ img {
 
 /* ---------- Footer ---------- */
 .footer {
-  background: var(--dark);
-  color: rgba(255, 255, 255, 0.7);
+  background: #6b6b7e;
+  color: rgba(255, 255, 255, 0.75);
   padding: 80px 0 40px;
 }
 
@@ -973,14 +975,14 @@ img {
 .social-link:hover {
   background: var(--gradient-1);
   border-color: transparent;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .footer-links h4 {
   font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
@@ -1007,8 +1009,8 @@ img {
 /* ---------- Reveal Animation ---------- */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .reveal.active {
@@ -1154,7 +1156,7 @@ img {
   .cursor-ring {
     width: 36px;
     height: 36px;
-    border: 2px solid rgba(245, 87, 108, 0.3);
+    border: 2px solid rgba(247, 168, 184, 0.3);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -1166,7 +1168,7 @@ img {
 
 /* ---------- Selection ---------- */
 ::selection {
-  background: rgba(245, 87, 108, 0.2);
+  background: rgba(247, 168, 184, 0.25);
   color: var(--dark);
 }
 
