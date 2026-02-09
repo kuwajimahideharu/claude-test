@@ -290,11 +290,22 @@ function initActiveNavLink() {
       }
     });
   }, {
-    threshold: 0.3,
+      }
+    });
+  }, {
+    threshold: 0.2,
     rootMargin: '-80px 0px -40% 0px'
   });
 
   sections.forEach(section => observer.observe(section));
+
+  // Immediate update on click
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
 }
 
 /* ---------- Back to Top Button ---------- */

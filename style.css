@@ -218,6 +218,14 @@ img {
   width: 100%;
 }
 
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--pink);
+}
+
 .nav-link-cta {
   background: var(--gradient-1);
   color: white !important;
@@ -1220,13 +1228,7 @@ img {
 }
 
 /* ---------- Active Nav Link ---------- */
-.nav-link.active::after {
-  width: 100%;
-}
 
-.nav-link.active {
-  color: var(--pink);
-}
 
 /* ---------- Back to Top Button ---------- */
 .back-to-top {
