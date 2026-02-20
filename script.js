@@ -290,9 +290,6 @@ function initActiveNavLink() {
       }
     });
   }, {
-      }
-    });
-  }, {
     threshold: 0.2,
     rootMargin: '-80px 0px -40% 0px'
   });
